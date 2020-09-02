@@ -34,7 +34,7 @@ video2.webm, path_of_video2_features.npy
 And then just simply run:
 
 ```sh
-python extract.py --csv=input.csv --type=2d --batch_size=64 --num_decoding_thread=4
+python video_feature_extractor/extract.py --csv=input.csv --type=2d --batch_size=64 --num_decoding_thread=4
 ```
 This command will extract 2d video feature for video1.mp4 (resp. video2.webm) at path_of_video1_features.npy (resp. path_of_video2_features.npy) in
 a form of a numpy array.
@@ -44,7 +44,7 @@ The parameter --num_decoding_thread will set how many parallel cpu thread are us
 ### Contrastive Representation Learning
 To do unsupervised pre-training of a 3D ResNet-18 model on HowTo100M dataset in an 8-gpu machine, we run
 ```
-python main_moco.py \
+python moco/main_moco.py \
   -a resnet18 \
   --lr 0.03 \
   --batch-size 256 \
