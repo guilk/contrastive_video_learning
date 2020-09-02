@@ -2,7 +2,7 @@
 
 In this repo, we propose a framework to learn video representations from large collections of unlabeled YT structural videos by using contrastive learning.
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/11435359/71603927-0ca98d00-2b14-11ea-9fd8-10d984a2de45.png" width="300">
+  <img src="https://github.com/guilk/contrastive_video_learning/blob/master/framework.png" width="300">
 </p>
 
 We train our model on [HowTo100M](https://arxiv.org/abs/1906.03327) dataset and evaluate our model on [YouCookII](http://youcook2.eecs.umich.edu/) dataset .
